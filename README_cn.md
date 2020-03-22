@@ -12,7 +12,7 @@
 
 # 文档
 
-[文档及Demo]](http://www.myllcn.com/smx-svelma/)
+[文档及Demo]](http://www.myllcn.com/svelma-pro/)
 
 # 快速开始
 
@@ -29,7 +29,7 @@
 
 #### bulma and svelma-pro
 
-    $ npm install --save bulma smx-svelma
+    $ npm install --save bulma svelma-pro
 
 #### scss
 
