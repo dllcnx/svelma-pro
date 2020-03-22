@@ -3,13 +3,15 @@
 
 # svelma-pro
 
+* [中文文档](README_cn.md)
+
 Based on [svelma](https://github.com/c0bra/svelma) project extension and modification, thanks to the original author components such as c0bra and bulma
 Based on the original component library, some common components and bug fixes are extended, and the functions of some components are modified.
 
 
 # Documentation
 
-[See docs + demos site here]()
+[See docs + demos site here](http://www.myllcn.com/svelma-pro/)
 
 # Quick Start
 
