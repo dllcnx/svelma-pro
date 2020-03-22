@@ -3,6 +3,8 @@
 
 # svelma-pro
 
+* [English Document](README.md)
+
 基于开源项目[svelma](https://github.com/c0bra/svelma) 扩展和修改, 所以在此感谢原作者`c0bra`以及`bulma`,`svelte`等团队.
 
 原项目组件比较少,存在一些小bug,所以我在在原有的组件库的基础上，扩展了一些常见的组件(例如时间,日期选择器,仿antd的layout布局,分页,等等),并对发现的一些bug进行了修改，对原有的组件功能,事件以及用户配置进行更人性化的修改和扩展。
