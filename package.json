@@ -2,7 +2,7 @@
   "name": "svelma-pro",
   "svelte": "src/index.js",
   "description": "Based on svelma project extension and modification",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "KeiferJu",
   "license": "MIT",
   "keywords": [

@@ -9,11 +9,12 @@
 
   import { obtainWeeks } from './main.js'
   import { createEventDispatcher } from 'svelte'
+  import Input from '../Input.svelte'
 
   const dispatch = createEventDispatcher()
 
   export let width = '100%'
-  export let nowDate = new Date()
+  let nowDate = new Date()
   export let i18n = 'ZH'
 
   export let markDate = []
@@ -26,20 +27,27 @@
 
   export let pickerRule = 'singleChoice'
 
- export let align = "left";
-  let left;
+  export let align = 'left'
+  export let icon = true;
+  export let inputClass = '';
+  let left
   $: {
-    if(align === 'center'){
-      left = 'calc(50% - 150px)';
-    }else if(align === 'right'){
+    if (align === 'center') {
+      left = 'calc(50% - 150px)'
+    } else if (align === 'right') {
       left = 'calc(100% - 300px)'
-    }else{
-      left = 0;
+    } else {
+      left = 0
     }
-
   }
 
   let pickerResult = []
+  let rangePickerResult = '';
+  $: {
+     if (pickerRule === 'rangeChoice') {
+       rangePickerResult = pickerResult[0].start+ '  ~  ' + pickerResult[1].end
+  }
+  }
 
   if (pickerRule === 'singleChoice') {
     const dt = new Date(Number(date))
@@ -173,49 +181,46 @@
 
   .range-input {
     width: 50%;
+    display: inline-block;
   }
 
-  .range-input.left,
-  .range-input.left:focus,
-  .range-input.left:active {
+  /* .input.left,
+  .input.left:focus,
+  .input.left:hover
+  .input.left:active {
     border-right: 0;
+    border-color: #dbdbdb !important;
     box-shadow: none !important;
-    /* float: left; */
   }
 
-  .range-input.right,
-  .range-input.right:focus,
-  .range-input.right:active {
+  .input.right,
+  .input.right:focus,
+  .input.right:hover,
+  .input.right:active {
     border-left: 0;
+    border-color: #dbdbdb !important;
     box-shadow: none !important;
-    float: right;
-  }
+  } */
 </style>
 
 <div style="width: {width};position: relative">
   {#if !calendar}
     {#if pickerRule === 'rangeChoice'}
       <div
-        style="position: relative;"
+        style="position: relative;margin: 5px 0 0 0;"
         on:click={() => {
           visible = !visible
         }}>
-        <input class="dp-input input is-primary range-input left" type="text" value={pickerResult[0].start} readonly />
-        <span class="fa fa-calendar date-icon" />
-        <input class="dp-input input is-primary range-input right" type="text" value={pickerResult[1].end} readonly />
-        <span class="fa fa-chevron-right date-icon" style="left: calc(50% - 5px);" />
+      <Input type="text" class={inputClass} bind:value={rangePickerResult} readonly iconPack="fa" icon="{icon? 'calendar': ''}" />
       </div>
     {:else}
-      <div style="position: relative;">
-        <input
-          class="dp-input input is-primary"
-          type="text"
-          value={pickerResult}
-          readonly
-          on:click={() => {
-            visible = !visible
-          }} />
-        <span class="fa fa-calendar date-icon" />
+      <div
+        style="position: relative;margin: 5px 0 0 0;"
+        on:click={() => {
+          visible = !visible
+        }}>
+        <Input type="text" class={inputClass} bind:value={pickerResult} readonly iconPack="fa" icon="{icon? 'calendar': ''}" />
+        <!-- <span class="fa fa-calendar date-icon" /> -->
       </div>
     {/if}
   {/if}

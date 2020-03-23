@@ -76,10 +76,10 @@
     {
       "description": "当前日期",
       "type": [
-        "DateObject"
+        "timestamp"
       ],
       "defaultvalue": "",
-      "name": "nowDate",
+      "name": "date",
       "values": ""
     },
     {
@@ -176,6 +176,22 @@
       "defaultvalue": "left",
       "name": "align",
       "values": "'left'、'center'、'right'"
+    },{
+      "description": "图标",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "icon",
+      "values": ""
+    },{
+      "description": "输入框样式类",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "inputClass",
+      "values": ""
     }
   ],
   "Timepicker": [
@@ -207,6 +223,7 @@
       "values": ""
     },
     {
+      "isEvent": true,
       "description": "选定事件",
       "name": "timeChecked",
       "values": ""
@@ -228,6 +245,22 @@
       "defaultvalue": "left",
       "name": "align",
       "values": "'left'、'center'、'right'"
+    },{
+      "description": "图标",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "icon",
+      "values": ""
+    },{
+      "description": "输入框样式类",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "inputClass",
+      "values": ""
     }
   ],
   "Dialog": [

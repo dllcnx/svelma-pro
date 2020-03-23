@@ -1,12 +1,15 @@
 <script>
   import Switcher from './Switcher.svelte'
   import { createEventDispatcher } from 'svelte'
+  import Input from '../Input.svelte'
 
   const dispatch = createEventDispatcher()
 
   export let width = '100%'
   export let hour12 = false // 是否12进制
    export let align = "left";
+     export let icon = true;
+  export let inputClass = '';
   let left;
   $: {
     if(align === 'center'){
@@ -156,7 +159,7 @@
     overflow: hidden;
   }
 
-  .touch-time-reset > button {
+  /* .touch-time-reset > button {
     width: 100px;
     height: 30px;
     border-radius: 15px;
@@ -170,7 +173,7 @@
   .touch-time-reset button:nth-child(1):active {
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
-  }
+  } */
 
   .touch-time {
     /* font-size: 30px;
@@ -178,15 +181,15 @@
     font-size: 20px;
     font-weight: 500;
   }
-  .dp-input {
+  /* .dp-input {
     margin: 5px 0 0 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     padding-left: 30px;
-  }
-  .date-icon {
+  } */
+  /* .date-icon {
     height: 40px;
     display: inline-block;
     width: 40px;
@@ -194,12 +197,14 @@
     bottom: 0;
     left: 10px;
     line-height: 40px;
-  }
+  } */
 </style>
 
-<div style="width: {width}">
-  <div style="position: relative">
-    <input
+<div style="width: {width};position: relative">
+  <div style="position: relative" on:click={() => {
+        visible = !visible
+      }} >
+    <!-- <input
       class="dp-input input is-primary"
       type="text"
       readonly
@@ -207,8 +212,10 @@
       on:click={() => {
         visible = !visible
       }} />
-    <span class="fa fa-clock date-icon" />
-    {#if visible}
+    <span class="fa fa-clock date-icon" /> -->
+    <Input type="text" class={inputClass} bind:value={_time} readonly iconPack="fa" icon="{icon? 'clock': ''}" />
+  </div>
+   {#if visible}
       <div class="touch-time-wrapper"  style="left: {left}">
         <div class="touch-time">{_time}</div>
         <div class="touch-time-picker">
@@ -235,5 +242,4 @@
       </div> -->
       </div>
     {/if}
-  </div>
 </div>
