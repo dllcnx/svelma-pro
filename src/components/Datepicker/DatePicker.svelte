@@ -138,6 +138,10 @@
     date = e.detail.timeStamp
     dispatch('dateChecked', e.detail)
   }
+
+  function windowClick(){
+    visible = false;
+  }
 </script>
 
 <style>
@@ -202,13 +206,14 @@
     box-shadow: none !important;
   } */
 </style>
-
+<svelte:window on:click={windowClick}></svelte:window>
 <div style="width: {width};position: relative">
   {#if !calendar}
     {#if pickerRule === 'rangeChoice'}
       <div
         style="position: relative;margin: 5px 0 0 0;"
-        on:click={() => {
+        on:click={(e) => {
+          e.stopPropagation()
           visible = !visible
         }}>
       <Input type="text" class={inputClass} bind:value={rangePickerResult} readonly iconPack="fa" icon="{icon? 'calendar': ''}" />
@@ -216,7 +221,8 @@
     {:else}
       <div
         style="position: relative;margin: 5px 0 0 0;"
-        on:click={() => {
+        on:click={(e) => {
+          e.stopPropagation()
           visible = !visible
         }}>
         <Input type="text" class={inputClass} bind:value={pickerResult} readonly iconPack="fa" icon="{icon? 'calendar': ''}" />
@@ -225,7 +231,7 @@
     {/if}
   {/if}
   {#if visible || calendar}
-    <div class={'calendar_' + theme} style="left: {left}">
+    <div class={'calendar_' + theme} style="left: {left}"  on:click={(e)=>e.stopPropagation()}>
       <Selector />
       {#if $view === 'y'}
         <YearView />

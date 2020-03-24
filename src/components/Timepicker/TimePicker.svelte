@@ -132,6 +132,10 @@
     }
     dispatch('timeChecked', data)
   }
+
+  function windowClick(){
+    visible = false;
+  }
 </script>
 
 <style>
@@ -199,9 +203,10 @@
     line-height: 40px;
   } */
 </style>
-
+<svelte:window on:click={windowClick}></svelte:window>
 <div style="width: {width};position: relative">
-  <div style="position: relative" on:click={() => {
+  <div style="position: relative" on:click={(e) => {
+        e.stopPropagation()
         visible = !visible
       }} >
     <!-- <input
@@ -216,7 +221,7 @@
     <Input type="text" class={inputClass} bind:value={_time} readonly iconPack="fa" icon="{icon? 'clock': ''}" />
   </div>
    {#if visible}
-      <div class="touch-time-wrapper"  style="left: {left}">
+      <div class="touch-time-wrapper"  style="left: {left}" on:click={(e)=>e.stopPropagation()}>
         <div class="touch-time">{_time}</div>
         <div class="touch-time-picker">
           <Switcher type="hours" data={HOURS} selected={selectedHour} on:timeChange={timeChanged} } {hour12} />
