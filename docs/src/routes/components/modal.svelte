@@ -42,4 +42,4 @@
   </div>
 </Example>
 
-<JSDoc {jsdoc}/>
+<JSDoc {jsdoc}   showEvent="true"/>

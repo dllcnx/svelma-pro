@@ -1,6 +1,8 @@
 <script>
   import { onDestroy, onMount } from 'svelte'
   import { chooseAnimation, isEscKey } from '../../utils'
+  import { createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
 
   export let active = true // 是否激活
   export let title = 'Modal title' //标题
@@ -35,6 +37,7 @@
   function close() {
     modal = null
     active = false
+    dispatch('closeEvent', '')
   }
 
   function keydown(e) {

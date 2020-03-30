@@ -1048,6 +1048,12 @@
       "defaultvalue": "true",
       "name": "backdropClose",
       "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "取消事件",
+      "name": "closeEvent",
+      "values": ""
     }
   ],
   "Notice": [],

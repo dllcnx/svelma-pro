@@ -172,8 +172,8 @@
     padding: 0;
     border-collapse: collapse;
     /* position: absolute; */
-    width: 300px;
-    left: -1px;
+    width: 301px;
+    /* left: -1px; */
   }
   tbody {
     padding: 0;
