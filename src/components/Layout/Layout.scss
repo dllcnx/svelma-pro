@@ -4,8 +4,8 @@ $layout-header-background: #001529;
 $layout-footer-background: $layout-header-background;
 $layout-sider-background: $layout-header-background;
 $layout-header-height: 64px;
-$layout-header-padding: 0 50px;
-$layout-footer-padding: 24px 50px;
+// $layout-header-padding: 0 50px;
+// $layout-footer-padding: 24px 50px;
 $layout-trigger-height: 48px;
 $layout-trigger-background: #002140;
 $layout-trigger-color: #fff;
@@ -45,14 +45,14 @@ $border-radius-base: 4px;
 
   &-header {
     height: $layout-header-height;
-    padding: $layout-header-padding;
+    // padding: $layout-header-padding;
     line-height: $layout-header-height;
     background: $layout-header-background;
     color: $text-color;
   }
 
   &-footer {
-    padding: $layout-footer-padding;
+    // padding: $layout-footer-padding;
     color: $text-color;
     font-size: $font-size-base;
     background: $layout-footer-background;
@@ -62,6 +62,8 @@ $border-radius-base: 4px;
     flex: auto;
     min-height: 0;
     color: $text-color2;
+    overflow: auto;
+    padding-bottom: 20px;
   }
 
   &-sider {

@@ -2010,6 +2010,12 @@
       "scope": "inner",
       "memberof": "module:Tabs",
       "___s": true
+    },
+    {
+      "isEvent": true,
+      "description": "切换事件",
+      "name": "activeTabChanged",
+      "values": "序号"
     }
   ],
   "Toast": [

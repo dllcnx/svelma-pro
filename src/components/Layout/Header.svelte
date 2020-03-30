@@ -1,7 +1,7 @@
 <script>
   export let height = "auto";
   export let width = "auto";
-  export let padding = "auto";
+  export let padding = "0 50px";
   export let bgcolor = "auto";
 </script>
 <style lang="scss">

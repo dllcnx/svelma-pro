@@ -11,8 +11,8 @@
   export let align = "";
   export let rounded = false;
   export let size = "";
-  export let previous = "Previous";
-  export let next = "Next page";
+  export let previous = "pre";
+  export let next = "next";
 
   let currentClass = current ? " is-current" : "";
   let classes;
@@ -51,7 +51,7 @@
 <nav class="{classes} {className}" role="navigation" aria-label="pagination">
   {#if !noIncremental}
     {#if Number(current) === 1}
-      <a href="/" class="pagination-previous" disabled>{previous}</a>
+      <p class="pagination-previous" disabled>{previous}</p>
     {:else}
       <a
         href="/"
@@ -61,7 +61,7 @@
       </a>
     {/if}
     {#if Number(current) === Number(total)}
-      <a href="/" class="pagination-next" disabled>{next}</a>
+      <p class="pagination-next" disabled>{next}</p>
     {:else}
       <a
         href="/"
