@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
 dist/*
-idea
-idea/*
+.idea
+.idea/*
 deploy.js
