@@ -17,6 +17,7 @@ import {Layout, Children} from './components/Layout'
 import Pagination from './components/Pagination/Pagination.svelte'
 import Datepicker from './components/DatePicker/Datepicker.svelte'
 import Timepicker from './components/Timepicker/TimePicker.svelte'
+import Carousel from './components/carousel/Carousel.svelte'
 
 export {
   Button,
@@ -38,7 +39,8 @@ export {
   Children,
   Pagination,
   Datepicker,
-  Timepicker
+  Timepicker,
+  Carousel
 }
 
 export const Svelma = {
@@ -60,5 +62,6 @@ export const Svelma = {
   Layout,
   Pagination,
   Datepicker,
-  Timepicker
+  Timepicker,
+  Carousel
 }
