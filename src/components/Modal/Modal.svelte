@@ -10,6 +10,7 @@
   export let animProps = { start: 1.2 }
   export let size = ''
   export let showClose = true //显示左上角关闭按钮
+  export let showHeader = true //是否显示头
   export let backdrop = true // 遮罩
   export let backdropClose = true // 点击遮罩是否关闭
   export const subComponent = null
@@ -53,6 +54,11 @@
     padding: 10px 20px;
     text-align: center;
   }
+  .delete {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
 </style>
 
 <svelte:window on:keydown={keydown} />
@@ -67,12 +73,18 @@
         }} />
     {/if}
     <div class="modal-card" transition:_animation|local={animProps} style="width: {width};height: {height}">
-      <header class="modal-card-head">
-        <p class="modal-card-title">{title}</p>
-        {#if showClose}
+      {#if showHeader}
+        <header class="modal-card-head">
+          <p class="modal-card-title">{title}</p>
+        </header>
+      {/if}
+      {#if showClose}
+        {#if showHeader}
           <button class="delete" aria-label="close" on:click={close} />
+        {:else}
+          <button class="delete" aria-label="close" on:click={close} style="top: 2px;right: 2px;" />
         {/if}
-      </header>
+      {/if}
       <section class="modal-card-body">
         <slot />
       </section>

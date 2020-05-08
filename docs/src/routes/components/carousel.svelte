@@ -1,9 +1,22 @@
+<script context="module">
+  export async function preload() {
+    const res = await this.fetch(`components/carousel.json`);
+    const jsdoc = await res.json();
+
+    return {
+      jsdoc
+    };
+  }
+</script>
 <script>
     import {
         Carousel
     } from 'svelma-pro'
     import DocHeader from '../../components/DocHeader.svelte'
     import Example from '../../components/Example.svelte'
+    import JSDoc from '../../components/JSDoc.svelte'
+
+    export let jsdoc
 
     let options = [
         'http://dev.smartmapx.com/assets/source-img/banner/banner.jpg',
@@ -39,3 +52,5 @@
         <Carousel options={options} />
     </div>
 </Example>
+
+<JSDoc {jsdoc}></JSDoc>

@@ -72,6 +72,89 @@
       "values": "<code>Any animation that ships with Svelte</code>"
     }
   ],
+  "Carousel":[
+    {
+      "description": "图片列表(url路径数组)",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": [],
+      "name": "options",
+      "values": ""
+    },
+    {
+      "description": "底部指示器",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "pagination",
+      "values": ""
+    },
+    {
+      "description": "左右导航按钮",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "navigation",
+      "values": ""
+    },
+    {
+      "description": "自动播放",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": false,
+      "name": "autoplay",
+      "values": ""
+    },
+    {
+      "description": "自动播放时长",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": 3000,
+      "name": "delay",
+      "values": ""
+    },
+    {
+      "description": "方向",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "horizontal",
+      "name": "direction",
+      "values": "horizontal,vertical"
+    },
+    {
+      "description": "循环",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "loop",
+      "values": ""
+    },
+    {
+      "description": "滑动禁止自动播放",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "disableOnInteraction",
+      "values": ""
+    },
+    {
+      "description": "切换特效",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "slide",
+      "name": "effect",
+      "values": "slide,fade,cube,coverflow,flip"
+    }
+  ],
   "Datepicker": [
     {
       "description": "当前日期",
@@ -1047,6 +1130,14 @@
       ],
       "defaultvalue": "true",
       "name": "backdropClose",
+      "values": ""
+    },{
+      "description": "是否显示头部",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "showHeader",
       "values": ""
     },
     {
