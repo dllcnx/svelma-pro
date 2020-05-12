@@ -11,14 +11,27 @@ import Notification from './components/Notification'
 import Progress from './components/Progress.svelte'
 import Snackbar from './components/Snackbar'
 import Switch from './components/Switch.svelte'
-import { Tabs, Tab } from './components/Tabs'
+import {
+  Tabs,
+  Tab
+} from './components/Tabs'
 import Toast from './components/Toast'
-import {Layout, Children} from './components/Layout'
+import {
+  Layout,
+  Header,
+  Content,
+  Sider,
+  Footer
+} from './components/Layout'
 import Pagination from './components/Pagination/Pagination.svelte'
 import Datepicker from './components/DatePicker/Datepicker.svelte'
 import Timepicker from './components/Timepicker/TimePicker.svelte'
 import Carousel from './components/carousel/Carousel.svelte'
-
+import {
+  Nav,
+  NavItem,
+  NavLayout
+} from './components/Nav'
 export {
   Button,
   Collapse,
@@ -36,11 +49,17 @@ export {
   Tab,
   Toast,
   Layout,
-  Children,
+  Header,
+  Content,
+  Sider,
+  Footer,
   Pagination,
   Datepicker,
   Timepicker,
-  Carousel
+  Carousel,
+  Nav,
+  NavItem,
+  NavLayout
 }
 
 export const Svelma = {
@@ -60,8 +79,15 @@ export const Svelma = {
   Tab,
   Toast,
   Layout,
+  Header,
+  Content,
+  Sider,
+  Footer,
   Pagination,
   Datepicker,
   Timepicker,
-  Carousel
+  Carousel,
+  Nav,
+  NavItem,
+  NavLayout
 }

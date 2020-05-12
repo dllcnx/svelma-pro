@@ -8,8 +8,8 @@
   import difference from 'lodash/difference'
   import { Svelma as Components } from 'svelma-pro'
 
-  const formComponents = ['Input', 'Field', 'Switch'].sort()
-  const omittedComponents = ['Tab']
+  const formComponents = ['Input', 'Field', 'Switch'].sort()  // Form
+  const omittedComponents = ['Tab','Sider','Content','Footer','Header','NavItem','NavLayout']     // 子选项不显示
   let components = ['Form', ...Object.keys(Components)].sort()
   components = difference(components, [...formComponents, ...omittedComponents])
 

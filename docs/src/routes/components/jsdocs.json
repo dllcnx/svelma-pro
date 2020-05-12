@@ -1,6 +1,5 @@
 {
-  "Button": [
-    {
+  "Button": [{
       "description": "用于按钮的html标记 (选择 'a' or 'button')",
       "type": [
         "String"
@@ -52,8 +51,7 @@
       "values": "<code>任何原生按钮类型 (button</code>, <code>submit</code>, <code>reset)</code>"
     }
   ],
-  "Collapse": [
-    {
+  "Collapse": [{
       "description": "折叠是否打开",
       "type": [
         "boolean"
@@ -72,8 +70,7 @@
       "values": "<code>Any animation that ships with Svelte</code>"
     }
   ],
-  "Carousel":[
-    {
+  "Carousel": [{
       "description": "图片列表(url路径数组)",
       "type": [
         "Array"
@@ -155,8 +152,7 @@
       "values": "slide,fade,cube,coverflow,flip"
     }
   ],
-  "Datepicker": [
-    {
+  "Datepicker": [{
       "description": "当前日期",
       "type": [
         "timestamp"
@@ -204,7 +200,7 @@
     {
       "description": "当disableDateRule为piecemeal时，格式为['2020-3-1','2020-3-2'...] 当disableDateRule为range时，格式为[{start:'2019-3-27'},{end:'2020-3-27'}]",
       "type": [
-        "Array","Object"
+        "Array", "Object"
       ],
       "defaultvalue": "",
       "name": "disableDate",
@@ -221,8 +217,7 @@
     },
     {
       "description": "选取结果，请与外部变量绑定来获取结果值",
-      "type": [
-      ],
+      "type": [],
       "defaultvalue": "''",
       "name": "pickerResult",
       "values": ""
@@ -259,7 +254,7 @@
       "defaultvalue": "left",
       "name": "align",
       "values": "'left'、'center'、'right'"
-    },{
+    }, {
       "description": "图标",
       "type": [
         "Boolean"
@@ -267,7 +262,7 @@
       "defaultvalue": "true",
       "name": "icon",
       "values": ""
-    },{
+    }, {
       "description": "输入框样式类",
       "type": [
         "String"
@@ -277,8 +272,7 @@
       "values": ""
     }
   ],
-  "Timepicker": [
-    {
+  "Timepicker": [{
       "description": "多语言",
       "type": [
         "String"
@@ -328,7 +322,7 @@
       "defaultvalue": "left",
       "name": "align",
       "values": "'left'、'center'、'right'"
-    },{
+    }, {
       "description": "图标",
       "type": [
         "Boolean"
@@ -336,7 +330,7 @@
       "defaultvalue": "true",
       "name": "icon",
       "values": ""
-    },{
+    }, {
       "description": "输入框样式类",
       "type": [
         "String"
@@ -346,8 +340,7 @@
       "values": ""
     }
   ],
-  "Dialog": [
-    {
+  "Dialog": [{
       "description": "Show a header on the dialog with this text",
       "type": [
         "String"
@@ -483,8 +476,7 @@
     }
   ],
   "Dropdown": [],
-  "Field": [
-    {
+  "Field": [{
       "meta": {
         "filename": "Field.svelte",
         "lineno": 6,
@@ -726,8 +718,7 @@
     }
   ],
   "Icon": [],
-  "Input": [
-    {
+  "Input": [{
       "meta": {
         "filename": "Input.svelte",
         "lineno": 7,
@@ -1074,8 +1065,7 @@
   "Layout": [],
   "Sider": [],
   "Message": [],
-  "Modal": [
-    {
+  "Modal": [{
       "description": "是否激活模态框",
       "type": [
         "Boolean"
@@ -1083,7 +1073,7 @@
       "defaultvalue": "false",
       "name": "active",
       "values": ""
-    },{
+    }, {
       "description": "宽度",
       "type": [
         "String"
@@ -1091,7 +1081,7 @@
       "defaultvalue": "false",
       "name": "width",
       "values": ""
-    },{
+    }, {
       "description": "高度",
       "type": [
         "String"
@@ -1099,7 +1089,7 @@
       "defaultvalue": "false",
       "name": "height",
       "values": ""
-    },{
+    }, {
       "description": "标题",
       "type": [
         "String"
@@ -1107,7 +1097,7 @@
       "defaultvalue": "Modal title",
       "name": "title",
       "values": ""
-    },{
+    }, {
       "description": "是否显示左上角关闭按钮",
       "type": [
         "Boolean"
@@ -1115,7 +1105,7 @@
       "defaultvalue": "true",
       "name": "showClose",
       "values": ""
-    },{
+    }, {
       "description": "是否显示遮罩",
       "type": [
         "Boolean"
@@ -1123,7 +1113,7 @@
       "defaultvalue": "true",
       "name": "backdrop",
       "values": ""
-    },{
+    }, {
       "description": "遮罩存在时,是否点击关闭",
       "type": [
         "Boolean"
@@ -1131,7 +1121,7 @@
       "defaultvalue": "true",
       "name": "backdropClose",
       "values": ""
-    },{
+    }, {
       "description": "是否显示头部",
       "type": [
         "Boolean"
@@ -1149,8 +1139,7 @@
   ],
   "Notice": [],
   "Notices": [],
-  "Notification": [
-    {
+  "Notification": [{
       "meta": {
         "filename": "Notification.svelte",
         "lineno": 9,
@@ -1458,8 +1447,7 @@
   "NotificationNotice": [],
   "Pagination": [],
   "PaginationLink": [],
-  "Progress": [
-    {
+  "Progress": [{
       "meta": {
         "filename": "Progress.svelte",
         "lineno": 7,
@@ -1612,8 +1600,7 @@
       "___s": true
     }
   ],
-  "Snackbar": [
-    {
+  "Snackbar": [{
       "meta": {
         "filename": "Snackbar.svelte",
         "lineno": 7,
@@ -1768,8 +1755,7 @@
       "___s": true
     }
   ],
-  "Switch": [
-    {
+  "Switch": [{
       "meta": {
         "filename": "Switch.svelte",
         "lineno": 4,
@@ -1895,8 +1881,7 @@
       "values": ""
     }
   ],
-  "Tab": [
-    {
+  "Tab": [{
       "meta": {
         "filename": "Tab.svelte",
         "lineno": 6,
@@ -1985,8 +1970,7 @@
       "___s": true
     }
   ],
-  "Tabs": [
-    {
+  "Tabs": [{
       "meta": {
         "filename": "Tabs.svelte",
         "lineno": 9,
@@ -2115,8 +2099,7 @@
       "values": "序号"
     }
   ],
-  "Toast": [
-    {
+  "Toast": [{
       "meta": {
         "filename": "Toast.svelte",
         "lineno": 7,
@@ -2270,5 +2253,82 @@
       "memberof": "module:Toast",
       "___s": true
     }
-  ]
+  ],
+  "Nav": [{
+    "description": "高度",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "auto",
+    "name": "height",
+    "values": ""
+  }, {
+    "description": "logo地址",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "/logo.png",
+    "name": "logoImg",
+    "values": ""
+  }, {
+    "description": "logo点击跳转地址",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "/",
+    "name": "logoUrl",
+    "values": ""
+  }, {
+    "description": "logo高度",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "auto",
+    "name": "logoH",
+    "values": ""
+  }, {
+    "description": "logo宽度",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "40px",
+    "name": "logoW",
+    "values": ""
+  }, {
+    "description": "背景",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "rgb(242, 242, 242)",
+    "name": "background",
+    "values": ""
+  }],
+  "NavItem": [{
+      "description": "是否开启下拉列表",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "isHover",
+      "values": ""
+    },
+    {
+      "description": "开启下拉列表情况下,slot='hover'插入下拉列表内容",
+      "type": [
+        "slot"
+      ],
+      "defaultvalue": "''",
+      "name": "slot",
+      "values": "hover,''"
+    }
+  ],
+  "NavLayout": [{
+    "description": "NavItem布局",
+    "type": [
+      "String"
+    ],
+    "defaultvalue": "center",
+    "name": "navPosition",
+    "values": "center,start,end"
+  }]
 }

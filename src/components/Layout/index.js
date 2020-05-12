@@ -3,9 +3,7 @@ import Header from './Header.svelte'
 import Content from './Content.svelte'
 import Sider from './Sider.svelte'
 import Footer from './Footer.svelte'
-export {Layout}
-
-export const Children = {
+export {
   Layout,
   Header,
   Content,

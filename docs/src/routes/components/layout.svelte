@@ -6,12 +6,13 @@
     return { jsdoc }
   }
 </script>
+
 <script>
-  import { Layout, Children } from 'svelma-pro'
+  import { Layout, Header, Content, Sider, Footer } from 'svelma-pro'
   import DocHeader from '../../components/DocHeader.svelte'
   import Example from '../../components/Example.svelte'
 
-    import JSDoc from '../../components/JSDoc.svelte'
+  import JSDoc from '../../components/JSDoc.svelte'
 
   export let jsdoc
 </script>
@@ -19,34 +20,30 @@
 <DocHeader title="Layout" subtitle="布局" />
 
 <Example
-  code={`<script>
-  import { Layout, Children } from 'svelma-pro';
-</script>
-
-<Layout>
-  <Children.Sider width="100px">
+  code={`<script ✂prettier:content✂="CiAgaW1wb3J0IHsgTGF5b3V0LCBDaGlsZHJlbiB9IGZyb20gJ3N2ZWxtYS1wcm8nOwo=">{}</script><Layout>
+  <Sider width="100px">
     侧边栏
-  </Children.Sider>
+  </Sider>
   <Layout>
-    <Children.Header>
+    <Header>
       头部
-    </Children.Header>
-    <Children.Content height="300px">
+    </Header>
+    <Content height="300px">
       内容
-    </Children.Content>
-    <Children.Footer>
+    </Content>
+    <Footer>
       脚部
-    </Children.Footer>
+    </Footer>
   </Layout>
 </Layout>
 `}>
   <div slot="preview">
     <Layout>
-      <Children.Sider width="100px">侧边栏</Children.Sider>
+      <Sider width="100px">侧边栏</Sider>
       <Layout>
-        <Children.Header>头部</Children.Header>
-        <Children.Content height="300px">内容</Children.Content>
-        <Children.Footer>脚部</Children.Footer>
+        <Header>头部</Header>
+        <Content height="300px">内容</Content>
+        <Footer>脚部</Footer>
       </Layout>
     </Layout>
   </div>
