@@ -1,6 +1,7 @@
 <script>
+  import { getContext } from 'svelte'
   export let navPosition = "center"; // center start  end
-  export let logoW;
+  const logoW = getContext('logoW')
 </script>
 
 <style>
@@ -18,7 +19,7 @@
 {#if navPosition === 'center'}
   <div
     class="navbar-start navbar-center"
-    style="right:calc(0.75rem + {logoW / 2})">
+    style="right:calc(0.75rem + ({logoW} /2))">
     <slot />
   </div>
 {:else if navPosition === 'end'}

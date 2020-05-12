@@ -1,12 +1,17 @@
 <script>
-  import NavItem from "./NavItem.svelte";
-  export let height = "auto";
-  export let logoImg = "/logo.png";
-  export let logoUrl = "/";
-  export let logoH = "auto";
-  export let logoW = 40;
-  export let background = "rgb(242, 242, 242)";
-
+  import NavItem from './NavItem.svelte'
+  import { setContext } from 'svelte'
+  export let height = 'auto'
+  export let logoImg = '/logo.png'
+  export let logoUrl = '/'
+  export let logoH = 'auto'
+  export let logoW = "40px";
+  export let background = 'rgb(242, 242, 242)'
+  export let logoShow = true;
+  setContext('logoW', logoW)
+  $: if (!logoShow) {
+    logoW = 0
+  }
   // export let navPosition = "center"; // center start
 </script>
 
@@ -25,22 +30,17 @@
   .navbar-img {
     max-height: 200px;
   }
-
-
 </style>
 
-<nav class="navbar" style="height: {height}px;background: {background}">
-  <div class="navbar-brand">
-    <a class="navbar-item" href={logoUrl}>
-      <img
-        class="navbar-img"
-        style="width: {logoW}px;height: {logoH}px"
-        src={logoImg}
-        alt="logo" />
-    </a>
-  </div>
-
+<nav class="navbar" style="height: {height};background: {background}">
+  {#if logoShow}
+    <div class="navbar-brand">
+      <a class="navbar-item" href={logoUrl}>
+        <img class="navbar-img" style="width: {logoW};height: {logoH}" src={logoImg} alt="logo" />
+      </a>
+    </div>
+  {/if}
   <div id="navMenubd-example" class="navbar-menu">
-  <slot logoW={logoW}></slot>
+    <slot logoW={logoW} />
   </div>
 </nav>

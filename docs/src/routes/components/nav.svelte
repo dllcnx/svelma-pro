@@ -7,27 +7,35 @@
     const jsdocItem = await res2.json()
     const jsdocLayout = await res3.json()
 
-    return { jsdoc ,jsdocItem, jsdocLayout}
+    return {
+      jsdoc,
+      jsdocItem,
+      jsdocLayout
+    }
   }
 </script>
 <script>
-  import { Nav, NavItem, NavLayout, Button } from 'svelma-pro'
+  import {
+    Nav,
+    NavItem,
+    NavLayout,
+    Button
+  } from 'svelma-pro'
   import DocHeader from '../../components/DocHeader.svelte'
   import Example from '../../components/Example.svelte'
 
-    import JSDoc from '../../components/JSDoc.svelte'
+  import JSDoc from '../../components/JSDoc.svelte'
 
-   export let jsdoc
+  export let jsdoc
   export let jsdocItem
   export let jsdocLayout
 </script>
 
 <DocHeader title="Nav" subtitle="导航" />
 
-<Example
-  code={`<script>
+<Example code={`<script>
   import { Nav, NavItem, NavLayout } from 'svelma-pro'
-</script>
+  </script>
 
   <Nav logoImg="/logo-192.png">
     <NavLayout navPosition="center">
@@ -40,19 +48,19 @@
       </NavItem>
     </NavLayout>
   </Nav>
-`}>
+  `}>
   <div slot="preview" style="position: relative;">
-  <Nav logoImg="/logo-192.png">
-    <NavLayout navPosition="center">
-      <NavItem>管理工具</NavItem>
-      <NavItem>开发资源</NavItem>
-    </NavLayout>
-    <NavLayout navPosition="end">
-      <NavItem>
-        <Button type="is-link">登录</Button>
-      </NavItem>
-    </NavLayout>
-  </Nav>
+    <Nav logoImg="/logo-192.png">
+      <NavLayout navPosition="center">
+        <NavItem>管理工具</NavItem>
+        <NavItem>开发资源</NavItem>
+      </NavLayout>
+      <NavLayout navPosition="end">
+        <NavItem>
+          <Button type="is-link">登录</Button>
+        </NavItem>
+      </NavLayout>
+    </Nav>
   </div>
 </Example>
 
@@ -60,23 +68,22 @@
 
 <p class="title is-4">下拉列表</p>
 
-<Example
-  code={`<script>
-  import { Nav, NavItem, NavLayout } from 'smx-svelma'
-</script>
+<Example code={`<script>
+  import { Nav, NavItem, NavLayout } from 'svelma-pro'
+  </script>
 
-  <Nav logoImg="/logo-192.png" background="rgba(0,0,0)">
-      <NavItem isHover={true}>
-        <span style="color:#fff">管理工具</span>
-        <div slot="hover">
-          <NavItem>开发资源</NavItem>
-          <NavItem>开发资源</NavItem>
-          <NavItem>开发资源</NavItem>
-        </div>
-      </NavItem>
-      <NavItem><span style="color:#fff">开发资源</span></NavItem>
-    </Nav>
-`}>
+  <Nav logoImg=/logo-192.png" background="rgba(0,0,0)">
+    <NavItem isHover={true}>
+      <span style="color:#fff">管理工具</span>
+      <div slot="hover">
+        <NavItem>开发资源</NavItem>
+        <NavItem>开发资源</NavItem>
+        <NavItem>开发资源</NavItem>
+      </div>
+    </NavItem>
+    <NavItem><span style="color:#fff">开发资源</span></NavItem>
+  </Nav>
+  `}>
   <div slot="preview" style="position: relative;">
     <Nav logoImg="/logo-192.png" background="rgba(0,0,0)">
       <NavItem isHover={true}>
@@ -98,7 +105,7 @@
 
 <h3 class="subtitle">Nav</h3>
 
-<JSDoc {jsdoc}  showHeader={false}/>
+<JSDoc {jsdoc} showHeader={false} />
 
 <br>
 <br>
