@@ -29,6 +29,9 @@
   export let jsdoc
   export let jsdocItem
   export let jsdocLayout
+
+  const url = "http://blog.myllcn.com";
+  const img = "http://www.myllcn.com/dassets/album/icon/icon.png";
 </script>
 
 <DocHeader title="Nav" subtitle="导航" />
@@ -37,7 +40,7 @@
   import { Nav, NavItem, NavLayout } from 'svelma-pro'
   </script>
 
-  <Nav logoImg="/logo-192.png">
+  <Nav logoImg="http://www.myllcn.com/dassets/album/icon/icon.png" logoUrl="http://www.myllcn.com">
     <NavLayout navPosition="center">
       <NavItem>管理工具</NavItem>
       <NavItem>开发资源</NavItem>
@@ -50,7 +53,7 @@
   </Nav>
   `}>
   <div slot="preview" style="position: relative;">
-    <Nav logoImg="/logo-192.png">
+    <Nav logoImg="http://www.myllcn.com/dassets/album/icon/icon.png" logoUrl="http://www.myllcn.com">
       <NavLayout navPosition="center">
         <NavItem>管理工具</NavItem>
         <NavItem>开发资源</NavItem>
@@ -70,9 +73,12 @@
 
 <Example code={`<script>
   import { Nav, NavItem, NavLayout } from 'svelma-pro'
+
+  const url = "http://blog.myllcn.com";
+  const img = "http://www.myllcn.com/dassets/album/icon/icon.png";
   </script>
 
-  <Nav logoImg=/logo-192.png" background="rgba(0,0,0)">
+  <Nav logoImg={img} logoUrl={url} background="rgba(0,0,0)">
     <NavItem isHover={true}>
       <span style="color:#fff">管理工具</span>
       <div slot="hover">
@@ -85,7 +91,7 @@
   </Nav>
   `}>
   <div slot="preview" style="position: relative;">
-    <Nav logoImg="/logo-192.png" background="rgba(0,0,0)">
+    <Nav logoImg={img} logoUrl={url} background="rgba(0,0,0)">
       <NavItem isHover={true}>
         <span style="color:#fff">管理工具</span>
         <div slot="hover">

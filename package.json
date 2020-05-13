@@ -2,7 +2,7 @@
   "name": "svelma-pro",
   "svelte": "src/index.js",
   "description": "Based on svelma project extension and modification",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "KeiferJu",
   "license": "MIT",
   "keywords": [
@@ -59,10 +59,11 @@
     "wait-for-localhost-cli": "^1.1.0"
   },
   "scripts": {
-    "build": "rollup -c",
+    "scss": "cd src && node-sass svelma-pro.scss svelma-pro.css",
+    "build": "npm run scss && rollup -c",
     "autobuild": "rollup -c -w",
     "autodocs": "(cd docs; npx sapper dev --basepath svelma-pro)",
-    "dev": "run-p autobuild autodocs",
+    "dev": "run-p scss autobuild autodocs",
     "docs": "(cd docs; npx sapper export --basepath svelma-pro)",
     "clean": "rm -rf node_modules/gh-pages/.cache",
     "deploy": "npm run clean && npm run docs && node ./deploy.js",
