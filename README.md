@@ -99,13 +99,14 @@ module.export = {
 }
 ```
 
-### 4. 引入Bulma的CSS样式和svelma-pro组件
+### 4. 引入Bulma的CSS样式及组件库样式和svelma-pro组件
 
 ```html
 
 <!-- main.js or client.js(sapper) -->
 <script>
   import 'bulma/css/bulma.css'
+  import 'svelma-pro/svelma-pro.css'
 </script>
 ```
 

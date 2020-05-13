@@ -106,6 +106,7 @@ module.export = {
 <!-- main.js or client.js(sapper) -->
 <script>
   import 'bulma/css/bulma.css'
+  import 'svelma-pro/svelma-pro.css'
 </script>
 ```
 
