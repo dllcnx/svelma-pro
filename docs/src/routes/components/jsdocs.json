@@ -2330,5 +2330,45 @@
     "defaultvalue": "center",
     "name": "navPosition",
     "values": "center,start,end"
-  }]
+  }],
+  "ColorPicker": [
+    {
+      "description": "初始化色值,支持hex,rgba,hsla格式色值",
+      "type": [
+        "String"
+      ],
+      "defaultvalue":"#1ec131",
+      "name": "color",
+      "values": "hex,rgba,hsla"
+    },{
+      "description": "显示模式,模式1表示按钮模式,2表示面板模式",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue":"1",
+      "name": "mode",
+      "values": "1,2"
+    },{
+      "description": "按钮模式下宽度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue":"200px",
+      "name": "width",
+      "values": ""
+    },{
+      "description": "色值类别,0:hex,1:rgba,2:hsla",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue":"0",
+      "name": "fieldsIndex",
+      "values": "0,1,2"
+    },{
+      "isEvent": true,
+      "description": "选择改变事件",
+      "name": "change",
+      "values": ""
+    }
+  ]
 }

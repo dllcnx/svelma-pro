@@ -99,6 +99,7 @@ module.export = {
 <!-- main.js或者client.js全局引入 -->
 <script>
   import 'bulma/css/bulma.css'
+  import 'svelma-pro/svelma-pro.css'
 </script>
     `}>
     </Codeview>

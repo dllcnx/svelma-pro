@@ -32,6 +32,8 @@ import {
   NavItem,
   NavLayout
 } from './components/Nav'
+import ColorPicker from './components/ColorPicker/ColorPicker.svelte';
+
 export {
   Button,
   Collapse,
@@ -59,7 +61,8 @@ export {
   Carousel,
   Nav,
   NavItem,
-  NavLayout
+  NavLayout,
+  ColorPicker
 }
 
 export const Svelma = {
@@ -89,5 +92,6 @@ export const Svelma = {
   Carousel,
   Nav,
   NavItem,
-  NavLayout
+  NavLayout,
+  ColorPicker
 }
