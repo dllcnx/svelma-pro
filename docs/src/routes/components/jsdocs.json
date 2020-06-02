@@ -2370,5 +2370,69 @@
       "name": "change",
       "values": ""
     }
+  ],
+  "Slider": [
+    {
+      "description": "绑定值,单选以Array[0]为准",
+      "type": [
+        "Array [number, number]"
+      ],
+      "defaultvalue":"[min, max]",
+      "name": "value",
+      "values": "[min, max]"
+    },{
+      "description": "最小值",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue":"0",
+      "name": "min",
+      "values": ""
+    },{
+      "description": "最大值",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue":"100",
+      "name": "max",
+      "values": ""
+    },{
+      "description": "步长",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue":"1",
+      "name": "step",
+      "values": ""
+    },{
+      "description": "设置为true使用范围输入",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue":"false",
+      "name": "range",
+      "values": ""
+    },{
+      "description": "如果你想要value[0]的值总是大于value[1]，就将它设置为true",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue":"false",
+      "name": "order",
+      "values": ""
+    },{
+      "description": "自定义滑块",
+      "type": [
+        "Slots"
+      ],
+      "defaultvalue":"default",
+      "name": "slot",
+      "values": "default,left,right"
+    },{
+      "isEvent": true,
+      "description": "选择改变事件",
+      "name": "change",
+      "values": ""
+    }
   ]
 }

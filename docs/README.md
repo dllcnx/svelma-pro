@@ -12,7 +12,7 @@
 
 # 文档
 
-[文档及Demo]](http://www.myllcn.com/svelma-pro/)
+[文档及Demo](http://www.myllcn.com/svelma-pro/)
 
 # 快速开始
 

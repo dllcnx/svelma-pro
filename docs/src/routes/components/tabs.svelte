@@ -200,7 +200,7 @@
 
 <h3 class="subtitle">Tabs</h3>
 
-<JSDoc jsdoc={jsdocTabs} showHeader={false}></JSDoc>
+<JSDoc jsdoc={jsdocTabs} showHeader={false} showEvent="true"></JSDoc>
 
 <br>
 <br>

@@ -26,13 +26,15 @@ import {
 import Pagination from './components/Pagination/Pagination.svelte'
 import Datepicker from './components/DatePicker/Datepicker.svelte'
 import Timepicker from './components/Timepicker/TimePicker.svelte'
-import Carousel from './components/carousel/Carousel.svelte'
+import Carousel from './components/Carousel/Carousel.svelte'
 import {
   Nav,
   NavItem,
   NavLayout
 } from './components/Nav'
 import ColorPicker from './components/ColorPicker/ColorPicker.svelte';
+import Tip from './components/Tip/Tip.svelte'
+import Slider from './components/Slider/Slider.svelte';
 
 export {
   Button,
@@ -62,7 +64,9 @@ export {
   Nav,
   NavItem,
   NavLayout,
-  ColorPicker
+  ColorPicker,
+  Tip,
+  Slider
 }
 
 export const Svelma = {
@@ -93,5 +97,7 @@ export const Svelma = {
   Nav,
   NavItem,
   NavLayout,
-  ColorPicker
+  ColorPicker,
+  Tip,
+  Slider
 }
