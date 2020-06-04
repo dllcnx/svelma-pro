@@ -15,7 +15,7 @@
   @import "./Layout.scss";
 </style>
 
-<div class="smx-layout-sider" bind:this={sider} style="width: {width};background: {bgcolor}">
+<div class="smx-layout-sider" bind:this={sider} style="width: {width};min-width: {width};background: {bgcolor}">
   <div class="smx-layout-sider-children">
     <slot />
   </div>
