@@ -2,7 +2,7 @@
   "name": "svelma-pro",
   "svelte": "src/index.js",
   "description": "Based on svelma project extension and modification",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "KeiferJu",
   "license": "MIT",
   "keywords": [
@@ -30,6 +30,7 @@
     "bulma": "^0.8.0"
   },
   "dependencies": {
+    "emotion": "^10.0.27",
     "tinycolor2": "^1.4.1",
     "tippy.js": "^6.2.3"
   },
