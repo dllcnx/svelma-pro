@@ -2369,6 +2369,11 @@
       "description": "选择改变事件",
       "name": "change",
       "values": ""
+    },{
+      "isEvent": true,
+      "description": "改变完成事件",
+      "name": "changeEnd",
+      "values": ""
     }
   ],
   "Slider": [

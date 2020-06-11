@@ -36,6 +36,6 @@
 
 <div class="alpha {className}" class:vertical class:horizontal={!vertical}>
   <div class="alpha-in" style="background: linear-gradient(to {toGradient}, transparent 0%, {color} 100%)">
-    <Slider bind:value={a} {vertical} on:input on:input={(event) => console.log(event.detail)} />
+    <Slider bind:value={a} {vertical} on:input on:input={(event) => console.log()} />
   </div>
 </div>
