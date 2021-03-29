@@ -3,11 +3,8 @@
   "svelte": "src/index.js",
   "description": "Based on svelma project extension and modification",
   "version": "2.0.0",
-  "author": "KeiferJu",
+  "author": "DLLCN",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "http://172.17.12.206:8081/repository/npm-hosted/"
-  },
   "keywords": [
     "svelte",
     "svelte.js",
@@ -16,6 +13,13 @@
     "component",
     "components"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeiferJu/svelma-pro"
+  },
+  "bugs": {
+    "url": "https://github.com/KeiferJu/svelma-pro/issues"
+  },
   "module": "dist/module.js",
   "main": "dist/index.js",
   "files": [
@@ -64,7 +68,8 @@
     "autodocs": "(cd docs; npx sapper dev --basepath svelma-pro)",
     "dev": "run-p autobuild autodocs",
     "docs": "(cd docs; npx sapper export --basepath svelma-pro)",
-    "deploy": "npm run docs && node ./deploy/upload.js",
+    "clean": "rm -rf node_modules/gh-pages/.cache",
+    "deploy": "npm run clean && npm run docs && node ./deploy.js",
     "pkg": "npm run build && npm publish"
   },
   "browserslist": "last 2 versions"

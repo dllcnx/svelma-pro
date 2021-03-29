@@ -10,7 +10,7 @@
 
 # 文档
 
-[文档及Demo](http://172.17.60.20:380/svelma-pro/)
+[文档及Demo](https://keiferju.github.io/svelma-pro/)
 
 # 快速开始
 
@@ -104,6 +104,7 @@ module.export = {
 <!-- main.js or client.js(sapper) -->
 <script>
   import 'bulma/css/bulma.css'
+  import "/svelma-pro/src/svelma-pro.css";
 </script>
 ```
 
