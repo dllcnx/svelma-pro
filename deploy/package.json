@@ -1,0 +1,28 @@
+{
+  "name": "auto-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeiferJu/auto-deploy.git"
+  },
+  "keywords": [],
+  "author": "KeiferJu <jkf19980216@163.com> (myllcn.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeiferJu/auto-deploy/issues"
+  },
+  "homepage": "https://github.com/KeiferJu/auto-deploy#readme",
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "compressing2": "^1.5.1",
+    "inquirer": "^7.1.0",
+    "node-ssh": "^8.0.0",
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3"
+  }
+}

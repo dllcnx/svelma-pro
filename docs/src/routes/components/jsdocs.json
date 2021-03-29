@@ -1,0 +1,2711 @@
+{
+  "Button": [
+    {
+      "description": "用于按钮的html标记 (选择 'a' or 'button')",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "button",
+      "name": "tag",
+      "values": "<code><code>button</code></code>, <code><code>a</code></code>"
+    },
+    {
+      "description": "Type (color of control)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "type",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>"
+    },
+    {
+      "description": "按钮大小",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "size",
+      "values": "<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>"
+    },
+    {
+      "description": "当tag为'a'时使用",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "href",
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Button.svelte",
+        "lineno": 30,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "原生按钮类型",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "nativeType",
+      "values": "<code>任何原生按钮类型 (button</code>, <code>submit</code>, <code>reset)</code>"
+    }
+  ],
+  "Table": [
+    {
+      "description": "表格head渲染数据",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "[]",
+      "name": "thead",
+      "values": "<code><code>[]</code></code>"
+    },
+    {
+      "description": "表格body渲染数据",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "[]",
+      "name": "tbody",
+      "values": "<code><code>[]</code></code>"
+    },
+    {
+      "description": "表格样式",
+      "type": [
+        "String"
+      ],
+      "name": "types",
+      "values": "<code>is-bordered</code>, <code>is-striped</code>, <code>is-hoverable</code>, <code>is-fullwidth</code>"
+    },
+    {
+      "description": "是否自定义表格",
+      "type": [
+        "Boolean"
+      ],
+      "name": "custom",
+      "defaultvalue": false,
+      "values": "<code>false</code>, <code>true</code>"
+    },
+    {
+      "description": "是否显示选择框",
+      "type": [
+        "Boolean"
+      ],
+      "name": "checkbox",
+      "defaultvalue": false,
+      "values": "<code>false</code>, <code>true</code>"
+    },
+    {
+      "description": "设置表格body高度",
+      "type": [
+        "String"
+      ],
+      "name": "bodyHeight",
+      "defaultvalue": "100%",
+      "values": "<code>px</code>"
+    },
+    {
+      "isEvent": true,
+      "description": "选择事件",
+      "name": "checked",
+      "values": ""
+    }
+  ],
+  "Stable": [
+    {
+      "description": "表格head渲染数据",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "[]",
+      "name": "thead",
+      "values": "<code><code>[]</code></code>"
+    },
+    {
+      "description": "表格body渲染数据",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "[]",
+      "name": "tbody",
+      "values": "<code><code>[]</code></code>"
+    },
+    {
+      "description": "表格样式",
+      "type": [
+        "String"
+      ],
+      "name": "types",
+      "values": "<code>is-bordered</code>, <code>is-striped</code>, <code>is-hoverable</code>, <code>is-fullwidth</code>"
+    },
+    {
+      "description": "是否自定义表格",
+      "type": [
+        "Boolean"
+      ],
+      "name": "custom",
+      "defaultvalue": false,
+      "values": "<code>false</code>, <code>true</code>"
+    },
+    {
+      "description": "是否显示选择框",
+      "type": [
+        "Boolean"
+      ],
+      "name": "checkbox",
+      "defaultvalue": false,
+      "values": "<code>false</code>, <code>true</code>"
+    },
+    {
+      "description": "设置表格body高度",
+      "type": [
+        "String"
+      ],
+      "name": "bodyHeight",
+      "defaultvalue": "100%",
+      "values": "<code>px</code>"
+    },
+    {
+      "isEvent": true,
+      "description": "选择事件",
+      "name": "checked",
+      "values": ""
+    }
+  ],
+  "Collapse": [
+    {
+      "description": "当前激活的面板(如果是手风琴模式，绑定值类型需要为string，否则为array)",
+      "type": [
+        "string",
+        "number"
+      ],
+      "defaultvalue": "[]",
+      "name": "activeNames",
+      "values": ""
+    },
+    {
+      "description": "是否手风琴模式",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": false,
+      "name": "accordion",
+      "values": ""
+    },
+    {
+      "description": "组件唯一标识符",
+      "type": [
+        "string",
+        "number"
+      ],
+      "defaultvalue": "随机数",
+      "name": "name",
+      "values": ""
+    },
+    {
+      "description": "面板标题",
+      "type": [
+        "string"
+      ],
+      "defaultvalue": "未定义标题",
+      "name": "title",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "改变折叠框事件",
+      "name": "change",
+      "values": "e"
+    }
+  ],
+  "Carousel": [
+    {
+      "description": "图片列表(url路径数组)",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": [],
+      "name": "options",
+      "values": ""
+    },
+    {
+      "description": "底部指示器",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "pagination",
+      "values": ""
+    },
+    {
+      "description": "左右导航按钮",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "navigation",
+      "values": ""
+    },
+    {
+      "description": "自动播放",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": false,
+      "name": "autoplay",
+      "values": ""
+    },
+    {
+      "description": "自动播放时长",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": 3000,
+      "name": "delay",
+      "values": ""
+    },
+    {
+      "description": "方向",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "horizontal",
+      "name": "direction",
+      "values": "horizontal,vertical"
+    },
+    {
+      "description": "循环",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "loop",
+      "values": ""
+    },
+    {
+      "description": "滑动禁止自动播放",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "disableOnInteraction",
+      "values": ""
+    },
+    {
+      "description": "切换特效",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "slide",
+      "name": "effect",
+      "values": "slide,fade,cube,coverflow,flip"
+    }
+  ],
+  "Datepicker": [
+    {
+      "description": "当前日期",
+      "type": [
+        "timestamp"
+      ],
+      "defaultvalue": "",
+      "name": "date",
+      "values": ""
+    },
+    {
+      "description": "多语言",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "'ZH'",
+      "name": "i18n",
+      "values": "'EN'、'ZH'"
+    },
+    {
+      "description": "主题",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "'light'",
+      "name": "theme",
+      "values": "'light'、'dark'"
+    },
+    {
+      "description": "标记的日期集合",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "",
+      "name": "markDate",
+      "values": "['2020-3-1','2020-3-2','2020-3-3'...]"
+    },
+    {
+      "description": "禁用规则。'piecemeal'表示零碎的，不连续的；'range'表示为一个范围。",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "disableDateRule",
+      "values": "'piecemeal'、'range'"
+    },
+    {
+      "description": "当disableDateRule为piecemeal时，格式为['2020-3-1','2020-3-2'...] 当disableDateRule为range时，格式为[{start:'2019-3-27'},{end:'2020-3-27'}]",
+      "type": [
+        "Array",
+        "Object"
+      ],
+      "defaultvalue": "",
+      "name": "disableDate",
+      "values": "['2020-3-1','2020-3-2'...] or [{start:'2019-3-27'},{end:'2020-3-27'}]"
+    },
+    {
+      "description": "选取规则：singleChoice（单选）、freeChoice（自由选择）、rangeChoice(范围选择)",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "'singleChoice'",
+      "name": "pickerRule",
+      "values": "'singleChoice'、'freeChoice'、'rangeChoice'"
+    },
+    {
+      "description": "选取结果，请与外部变量绑定来获取结果值",
+      "type": [],
+      "defaultvalue": "''",
+      "name": "pickerResult",
+      "values": ""
+    },
+    {
+      "description": "日历模式",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "calendar",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "选定事件",
+      "name": "dateChecked",
+      "values": ""
+    },
+    {
+      "description": "宽度",
+      "type": [
+        "Sting"
+      ],
+      "defaultvalue": "300px",
+      "name": "width",
+      "values": "px,%,rem"
+    },
+    {
+      "description": "位置",
+      "type": [
+        "Sting"
+      ],
+      "defaultvalue": "left",
+      "name": "align",
+      "values": "'left'、'center'、'right'"
+    },
+    {
+      "description": "图标",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "icon",
+      "values": ""
+    },
+    {
+      "description": "输入框样式类",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "inputClass",
+      "values": ""
+    }
+  ],
+  "Timepicker": [
+    {
+      "description": "多语言",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "'ZH'",
+      "name": "i18n",
+      "values": "'EN'、'ZH'"
+    },
+    {
+      "description": "12小时制",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "hour12",
+      "values": "true、false"
+    },
+    {
+      "description": "绑定时间",
+      "type": [
+        "DateObject"
+      ],
+      "defaultvalue": "",
+      "name": "time",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "选定事件",
+      "name": "timeChecked",
+      "values": ""
+    },
+    {
+      "description": "宽度",
+      "type": [
+        "Sting"
+      ],
+      "defaultvalue": "300px",
+      "name": "width",
+      "values": "px,%,rem"
+    },
+    {
+      "description": "位置",
+      "type": [
+        "Sting"
+      ],
+      "defaultvalue": "left",
+      "name": "align",
+      "values": "'left'、'center'、'right'"
+    },
+    {
+      "description": "图标",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "icon",
+      "values": ""
+    },
+    {
+      "description": "输入框样式类",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "inputClass",
+      "values": ""
+    }
+  ],
+  "Dialog": [
+    {
+      "description": "Show a header on the dialog with this text",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "title",
+      "values": ""
+    },
+    {
+      "description": "Text or html message for this dialog",
+      "type": [
+        "String"
+      ],
+      "name": "message",
+      "values": ""
+    },
+    {
+      "description": "Text to show on the confirmation button",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "OK",
+      "name": "confirmText",
+      "values": ""
+    },
+    {
+      "description": "Text to show on the cancel  button",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "Cancel",
+      "name": "cancelText",
+      "values": ""
+    },
+    {
+      "description": "Focus on confirm or cancel button when dialog opens",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "confirm",
+      "name": "focusOn",
+      "values": "<code><code>confirm</code></code>, <code><code>cancel</code></code>"
+    },
+    {
+      "description": "Show this icon on left-side of dialog. It will use the color from <code>type</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "icon",
+      "values": ""
+    },
+    {
+      "description": "Fontawesome icon pack to use. By default the <code>Icon</code> component uses <code>fas</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "iconPack",
+      "values": "<code><code>fas</code></code>, <code><code>fab</code></code>, <code>etc...</code>"
+    },
+    {
+      "description": "Show an input field",
+      "type": [
+        "Boolean"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "hasInput",
+      "values": ""
+    },
+    {
+      "description": "Show the cancel button. True for <code>confirm()</code>",
+      "type": [
+        "Boolean"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "showCancel",
+      "values": ""
+    },
+    {
+      "description": "Dialog's size",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "size",
+      "values": "<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>"
+    },
+    {
+      "description": "Type (color) to use on confirm button and icon",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-primary",
+      "name": "type",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>"
+    },
+    {
+      "description": "Animation to use when showing dialog",
+      "type": [
+        "String",
+        "function"
+      ],
+      "optional": true,
+      "defaultvalue": "scale",
+      "name": "animation",
+      "values": "<code>Any transition name that ships with Svelte</code>, <code>or a custom function</code>"
+    },
+    {
+      "description": "Props to pass to animation function",
+      "type": [
+        "Object"
+      ],
+      "optional": true,
+      "defaultvalue": "{ start: 1.2 }",
+      "name": "animProps",
+      "values": ""
+    },
+    {
+      "description": "Props (attributes) to use to on prompt input element",
+      "type": [
+        "Object"
+      ],
+      "optional": true,
+      "name": "inputProps",
+      "values": ""
+    }
+  ],
+  "Dropdown": [],
+  "Field": [
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 6,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Type (color) of the field and help message. Also adds a matching icon.",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Field~type",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 12,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Label for input",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "label",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "label"
+      },
+      "kind": "prop",
+      "longname": "module:Field~label",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 17,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Same as native <code>for</code> on label",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "labelFor",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "labelFor"
+      },
+      "kind": "prop",
+      "longname": "module:Field~labelFor",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 22,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Message to show beneath input",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "message",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "message"
+      },
+      "kind": "prop",
+      "longname": "module:Field~message",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 27,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Direct child components/elements of Field will be grouped horizontally",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": false,
+      "name": "grouped",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "defaultvalue": false,
+        "name": "grouped"
+      },
+      "kind": "prop",
+      "longname": "module:Field~grouped",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 32,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Allow grouped controls to cover multiple lines",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": false,
+      "name": "groupMultiline",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "defaultvalue": false,
+        "name": "groupMultiline"
+      },
+      "kind": "prop",
+      "longname": "module:Field~groupMultiline",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 37,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Alter the alignment of the field",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "position",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "position"
+      },
+      "kind": "prop",
+      "values": "<code>is-centered</code>, <code>is-right</code>",
+      "longname": "module:Field~position",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Field.svelte",
+        "lineno": 43,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Automatically attach child controls together",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": true,
+      "name": "addons",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "defaultvalue": true,
+        "name": "addons"
+      },
+      "kind": "prop",
+      "longname": "module:Field~addons",
+      "scope": "inner",
+      "memberof": "module:Field",
+      "___s": true,
+      "values": ""
+    }
+  ],
+  "Icon": [],
+  "Input": [
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 7,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Binding value",
+      "type": [
+        "String",
+        "Number"
+      ],
+      "optional": true,
+      "name": "value",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String",
+            "Number"
+          ]
+        },
+        "optional": true,
+        "name": "value"
+      },
+      "kind": "prop",
+      "longname": "module:Input~value",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 12,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Input type, or <code>textarea</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "text",
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "text",
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>Any native type</code>, <code><code>textarea</code></code>",
+      "longname": "module:Input~type",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 18,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Size of input",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "size",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "size"
+      },
+      "kind": "prop",
+      "values": "<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>",
+      "longname": "module:Input~size",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 24,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Makes input full-width when inside a grouped or addon field",
+      "type": [
+        "boolean"
+      ],
+      "defaultvalue": false,
+      "name": "expanded",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "defaultvalue": false,
+        "name": "expanded"
+      },
+      "kind": "prop",
+      "longname": "module:Input~expanded",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 29,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Show the password reveal toggle button",
+      "type": [
+        "boolean"
+      ],
+      "defaultvalue": false,
+      "name": "passwordReveal",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "defaultvalue": false,
+        "name": "passwordReveal"
+      },
+      "kind": "prop",
+      "longname": "module:Input~passwordReveal",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 34,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Set input maxlength and show a counter",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "name": "maxlength",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "name": "maxlength"
+      },
+      "kind": "prop",
+      "longname": "module:Input~maxlength",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 39,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Show the character counter when <code>maxlength<code> is set",
+      "type": [
+        "boolean"
+      ],
+      "optional": true,
+      "defaultvalue": true,
+      "name": "hasCounter",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": true,
+        "name": "hasCounter"
+      },
+      "kind": "prop",
+      "longname": "module:Input~hasCounter",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 44,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Show loading indicator",
+      "type": [
+        "boolean"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "loading",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "name": "loading"
+      },
+      "kind": "prop",
+      "longname": "module:Input~loading",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 49,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Show this icon on left side of input",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "icon",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "icon"
+      },
+      "kind": "prop",
+      "longname": "module:Input~icon",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 54,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Fontawesome icon pack to use. By default the <code>Icon</code> component uses <code>fas</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "iconPack",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "iconPack"
+      },
+      "kind": "prop",
+      "values": "<code><code>fas</code></code>, <code><code>fab</code></code>, <code>etc...</code>",
+      "longname": "module:Input~iconPack",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Input.svelte",
+        "lineno": 60,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Input is disabled",
+      "type": [
+        "boolean"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "disabled",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "name": "disabled"
+      },
+      "kind": "prop",
+      "longname": "module:Input~disabled",
+      "scope": "inner",
+      "memberof": "module:Input",
+      "___s": true,
+      "values": ""
+    }
+  ],
+  "Content": [],
+  "Footer": [],
+  "Header": [],
+  "Layout": [],
+  "Sider": [],
+  "Message": [],
+  "Modal": [
+    {
+      "description": "是否激活模态框",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "active",
+      "values": ""
+    },
+    {
+      "description": "宽度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "false",
+      "name": "width",
+      "values": ""
+    },
+    {
+      "description": "高度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "false",
+      "name": "height",
+      "values": ""
+    },
+    {
+      "description": "标题",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "Modal title",
+      "name": "title",
+      "values": ""
+    },
+    {
+      "description": "是否显示左上角关闭按钮",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "showClose",
+      "values": ""
+    },
+    {
+      "description": "是否显示遮罩",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "backdrop",
+      "values": ""
+    },
+    {
+      "description": "遮罩存在时,是否点击关闭",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "backdropClose",
+      "values": ""
+    },
+    {
+      "description": "是否显示头部",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "showHeader",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "取消事件",
+      "name": "closeEvent",
+      "values": ""
+    }
+  ],
+  "Notice": [],
+  "Notices": [],
+  "Notification": [
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 9,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Type (color)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Notification~type",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 15,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Whether the notification is visible or not",
+      "type": [
+        "boolean"
+      ],
+      "defaultvalue": true,
+      "name": "active",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "defaultvalue": true,
+        "name": "active"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~active",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 20,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Display an X button that closes the notification",
+      "type": [
+        "boolean"
+      ],
+      "defaultvalue": true,
+      "name": "showClose",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "defaultvalue": true,
+        "name": "showClose"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~showClose",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 25,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Automatically close the notification after <code>duration</code>. Doesn't apply when opening programmatically",
+      "type": [
+        "boolean"
+      ],
+      "defaultvalue": false,
+      "name": "autoClose",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "defaultvalue": false,
+        "name": "autoClose"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~autoClose",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 30,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Duration notification will remain on screen",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 2000,
+      "name": "duration",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 2000,
+        "name": "duration"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~duration",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 35,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Show icon on left-side of the notification. If set to <code>true</code>, icon will be determined from <code>type</code> property.",
+      "type": [
+        "String",
+        "Boolean"
+      ],
+      "optional": true,
+      "name": "icon",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String",
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "name": "icon"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~icon",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 40,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Fontawesome icon pack to use. By default the <code>Icon</code> component uses <code>fas</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "iconPack",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "iconPack"
+      },
+      "kind": "prop",
+      "values": "<code><code>fas</code></code>, <code><code>fab</code></code>, <code>etc...</code>",
+      "longname": "module:Notification~iconPack",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 46,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Label for the close button, to be read by accessibility screenreaders",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "ariaCloseLabel",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "ariaCloseLabel"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~ariaCloseLabel",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 51,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Text for notification, when used programmatically",
+      "type": [
+        "String"
+      ],
+      "name": "message",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "name": "message"
+      },
+      "kind": "prop",
+      "longname": "module:Notification~message",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Notification.svelte",
+        "lineno": 55,
+        "columnno": 2,
+        "path": "src/components/Notification"
+      },
+      "description": "Where the notification will show on the screen when used programmatically",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-top-right",
+      "name": "position",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "is-top-right",
+        "name": "position"
+      },
+      "kind": "prop",
+      "values": "<code><code>is-top</code></code>, <code><code>is-bottom</code></code>, <code><code>is-top-left</code></code>, <code><code>is-top-right</code></code>, <code><code>is-bottom-left</code></code>, <code><code>is-bottom-right</code></code>",
+      "longname": "module:Notification~position",
+      "scope": "inner",
+      "memberof": "module:Notification",
+      "___s": true
+    }
+  ],
+  "NotificationNotice": [],
+  "Pagination": [],
+  "PaginationLink": [],
+  "Progress": [
+    {
+      "meta": {
+        "filename": "Progress.svelte",
+        "lineno": 7,
+        "columnno": 0,
+        "path": "src/components"
+      },
+      "description": "Value of progress bar",
+      "type": [
+        "Number"
+      ],
+      "name": "value",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "name": "value"
+      },
+      "kind": "prop",
+      "longname": "module:Progress~value",
+      "scope": "inner",
+      "memberof": "module:Progress",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Progress.svelte",
+        "lineno": 12,
+        "columnno": 0,
+        "path": "src/components"
+      },
+      "description": "Type (color) of progress bar",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Progress~type",
+      "scope": "inner",
+      "memberof": "module:Progress",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Progress.svelte",
+        "lineno": 18,
+        "columnno": 0,
+        "path": "src/components"
+      },
+      "description": "Maximum value of progress bar",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 100,
+      "name": "max",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 100,
+        "name": "max"
+      },
+      "kind": "prop",
+      "longname": "module:Progress~max",
+      "scope": "inner",
+      "memberof": "module:Progress",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Progress.svelte",
+        "lineno": 23,
+        "columnno": 0,
+        "path": "src/components"
+      },
+      "description": "Duration of progress change animation (in ms)",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 400,
+      "name": "duration",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 400,
+        "name": "duration"
+      },
+      "kind": "prop",
+      "longname": "module:Progress~duration",
+      "scope": "inner",
+      "memberof": "module:Progress",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Progress.svelte",
+        "lineno": 28,
+        "columnno": 0,
+        "path": "src/components"
+      },
+      "description": "Easing function to use for animation",
+      "type": [
+        "function"
+      ],
+      "optional": true,
+      "name": "cubicOut",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "name": "cubicOut"
+      },
+      "kind": "prop",
+      "values": "<code>Any function from <code>svelte/easing</code></code>, <code>or a custom one</code>",
+      "longname": "module:Progress~cubicOut",
+      "scope": "inner",
+      "memberof": "module:Progress",
+      "___s": true
+    }
+  ],
+  "Snackbar": [
+    {
+      "meta": {
+        "filename": "Snackbar.svelte",
+        "lineno": 7,
+        "columnno": 2,
+        "path": "src/components/Snackbar"
+      },
+      "description": "Text or html message for snackbar",
+      "type": [
+        "String"
+      ],
+      "name": "message",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "name": "message"
+      },
+      "kind": "prop",
+      "longname": "module:Snackbar~message",
+      "scope": "inner",
+      "memberof": "module:Snackbar",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Snackbar.svelte",
+        "lineno": 12,
+        "columnno": 2,
+        "path": "src/components/Snackbar"
+      },
+      "description": "Duration snackbar will remain on screen",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 3500,
+      "name": "duration",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 3500,
+        "name": "duration"
+      },
+      "kind": "prop",
+      "longname": "module:Snackbar~duration",
+      "scope": "inner",
+      "memberof": "module:Snackbar",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Snackbar.svelte",
+        "lineno": 17,
+        "columnno": 2,
+        "path": "src/components/Snackbar"
+      },
+      "description": "Where the snackbar will show on the screen",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-bottom-right",
+      "name": "position",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "is-bottom-right",
+        "name": "position"
+      },
+      "kind": "prop",
+      "values": "<code><code>is-top</code></code>, <code><code>is-bottom</code></code>, <code><code>is-top-left</code></code>, <code><code>is-top-right</code></code>, <code><code>is-bottom-left</code></code>, <code><code>is-bottom-right</code></code>",
+      "longname": "module:Snackbar~position",
+      "scope": "inner",
+      "memberof": "module:Snackbar",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Snackbar.svelte",
+        "lineno": 23,
+        "columnno": 2,
+        "path": "src/components/Snackbar"
+      },
+      "description": "Type (color)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-dark",
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "is-dark",
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Snackbar~type",
+      "scope": "inner",
+      "memberof": "module:Snackbar",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Snackbar.svelte",
+        "lineno": 29,
+        "columnno": 2,
+        "path": "src/components/Snackbar"
+      },
+      "description": "Background type (any of the Bulma <code>has-background-</code> classes will work)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "background",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "background"
+      },
+      "kind": "prop",
+      "values": "<code><code>has-background-*</code></code>",
+      "longname": "module:Snackbar~background",
+      "scope": "inner",
+      "memberof": "module:Snackbar",
+      "___s": true
+    }
+  ],
+  "Switch": [
+    {
+      "meta": {
+        "filename": "Switch.svelte",
+        "lineno": 4,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Binding for whether the switch to \"on\" or not",
+      "type": [
+        "Any"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "checked",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Any"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "name": "checked"
+      },
+      "kind": "prop",
+      "longname": "module:Switch~checked",
+      "scope": "inner",
+      "memberof": "module:Switch",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Switch.svelte",
+        "lineno": 9,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Type (color of control)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "description": "Type (color of control)",
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Switch~type",
+      "scope": "inner",
+      "memberof": "module:Switch",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Switch.svelte",
+        "lineno": 15,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Size of switch",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "size",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "size"
+      },
+      "kind": "prop",
+      "values": "<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>",
+      "longname": "module:Switch~size",
+      "scope": "inner",
+      "memberof": "module:Switch",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Switch.svelte",
+        "lineno": 21,
+        "columnno": 2,
+        "path": "src/components"
+      },
+      "description": "Whether switch is disabled or not",
+      "type": [
+        "Boolean"
+      ],
+      "optional": true,
+      "defaultvalue": false,
+      "name": "disabled",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Boolean"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": false,
+        "name": "disabled"
+      },
+      "kind": "prop",
+      "longname": "module:Switch~disabled",
+      "scope": "inner",
+      "memberof": "module:Switch",
+      "___s": true,
+      "values": ""
+    }
+  ],
+  "Tab": [
+    {
+      "meta": {
+        "filename": "Tab.svelte",
+        "lineno": 6,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Label for tab",
+      "type": [
+        "String"
+      ],
+      "name": "label",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "name": "label"
+      },
+      "kind": "prop",
+      "longname": "module:Tab~label",
+      "scope": "inner",
+      "memberof": "module:Tab",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Tab.svelte",
+        "lineno": 11,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Show this icon on left-side of the tab",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "icon",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "icon"
+      },
+      "kind": "prop",
+      "longname": "module:Tab~icon",
+      "scope": "inner",
+      "memberof": "module:Tab",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Tab.svelte",
+        "lineno": 16,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Fontawesome icon pack to use. By default the <code>Icon</code> component uses <code>fas</code>",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "iconPack",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "iconPack"
+      },
+      "kind": "prop",
+      "values": "<code><code>fas</code></code>, <code><code>fab</code></code>, <code>etc...</code>",
+      "longname": "module:Tab~iconPack",
+      "scope": "inner",
+      "memberof": "module:Tab",
+      "___s": true
+    }
+  ],
+  "Tabs": [
+    {
+      "meta": {
+        "filename": "Tabs.svelte",
+        "lineno": 9,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Index of the active tab (zero-based)",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 0,
+      "name": "value",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 0,
+        "name": "value"
+      },
+      "kind": "prop",
+      "longname": "module:Tabs~value",
+      "scope": "inner",
+      "memberof": "module:Tabs",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Tabs.svelte",
+        "lineno": 14,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Size of tabs",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "size",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "size"
+      },
+      "kind": "prop",
+      "values": "<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>",
+      "longname": "module:Tabs~size",
+      "scope": "inner",
+      "memberof": "module:Tabs",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Tabs.svelte",
+        "lineno": 20,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Position of tabs list, horizontally. By default they're positioned to the left",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "position",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "position"
+      },
+      "kind": "prop",
+      "values": "<code>is-centered</code>, <code>is-right</code>",
+      "longname": "module:Tabs~position",
+      "scope": "inner",
+      "memberof": "module:Tabs",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Tabs.svelte",
+        "lineno": 26,
+        "columnno": 2,
+        "path": "src/components/Tabs"
+      },
+      "description": "Style of tabs",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "style",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "style"
+      },
+      "kind": "prop",
+      "values": "<code>is-boxed</code>, <code>is-toggle</code>, <code>is-toggle-rounded</code>, <code>is-fullwidth</code>",
+      "longname": "module:Tabs~style",
+      "scope": "inner",
+      "memberof": "module:Tabs",
+      "___s": true
+    },
+    {
+      "isEvent": true,
+      "description": "切换事件",
+      "name": "activeTabChanged",
+      "values": "序号"
+    }
+  ],
+  "Toast": [
+    {
+      "meta": {
+        "filename": "Toast.svelte",
+        "lineno": 7,
+        "columnno": 2,
+        "path": "src/components/Toast"
+      },
+      "description": "Text or html message for toast",
+      "type": [
+        "String"
+      ],
+      "name": "message",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "name": "message"
+      },
+      "kind": "prop",
+      "longname": "module:Toast~message",
+      "scope": "inner",
+      "memberof": "module:Toast",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Toast.svelte",
+        "lineno": 12,
+        "columnno": 2,
+        "path": "src/components/Toast"
+      },
+      "description": "Duration toast will remain on screen",
+      "name": "duration",
+      "kind": "prop",
+      "type": [
+        "Number"
+      ],
+      "optional": true,
+      "defaultvalue": 2000,
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "Number"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": 2000,
+        "name": "duration"
+      },
+      "longname": "module:Toast~duration",
+      "scope": "inner",
+      "memberof": "module:Toast",
+      "___s": true,
+      "values": ""
+    },
+    {
+      "meta": {
+        "filename": "Toast.svelte",
+        "lineno": 18,
+        "columnno": 2,
+        "path": "src/components/Toast"
+      },
+      "description": "Where the toast will show on the screen",
+      "name": "position",
+      "kind": "prop",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-top",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "is-top",
+        "name": "position"
+      },
+      "values": "<code><code>is-top</code></code>, <code><code>is-bottom</code></code>, <code><code>is-top-left</code></code>, <code><code>is-top-right</code></code>, <code><code>is-bottom-left</code></code>, <code><code>is-bottom-right</code></code>",
+      "longname": "module:Toast~position",
+      "scope": "inner",
+      "memberof": "module:Toast",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Toast.svelte",
+        "lineno": 25,
+        "columnno": 2,
+        "path": "src/components/Toast"
+      },
+      "description": "Type (color)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "defaultvalue": "is-dark",
+      "name": "type",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "is-dark",
+        "name": "type"
+      },
+      "kind": "prop",
+      "values": "<code>is-white</code>, <code>is-black</code>, <code>is-light</code>, <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>, <code>is-warning</code>, <code>is-danger</code>",
+      "longname": "module:Toast~type",
+      "scope": "inner",
+      "memberof": "module:Toast",
+      "___s": true
+    },
+    {
+      "meta": {
+        "filename": "Toast.svelte",
+        "lineno": 31,
+        "columnno": 2,
+        "path": "src/components/Toast"
+      },
+      "description": "Background type (any of the Bulma <code>has-background-</code> classes will work)",
+      "type": [
+        "String"
+      ],
+      "optional": true,
+      "name": "background",
+      "_isSvelteDoc": true,
+      "_svelteProps": {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": true,
+        "name": "background"
+      },
+      "kind": "prop",
+      "values": "<code><code>has-background-*</code></code>",
+      "longname": "module:Toast~background",
+      "scope": "inner",
+      "memberof": "module:Toast",
+      "___s": true
+    }
+  ],
+  "Nav": [
+    {
+      "description": "高度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "auto",
+      "name": "height",
+      "values": ""
+    },
+    {
+      "description": "logo地址",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "/logo.png",
+      "name": "logoImg",
+      "values": ""
+    },
+    {
+      "description": "logo点击跳转地址",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "/",
+      "name": "logoUrl",
+      "values": ""
+    },
+    {
+      "description": "logo高度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "auto",
+      "name": "logoH",
+      "values": ""
+    },
+    {
+      "description": "logo宽度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "40px",
+      "name": "logoW",
+      "values": ""
+    },
+    {
+      "description": "背景",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "rgb(242, 242, 242)",
+      "name": "background",
+      "values": ""
+    }
+  ],
+  "NavItem": [
+    {
+      "description": "是否开启下拉列表",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "isHover",
+      "values": ""
+    },
+    {
+      "description": "开启下拉列表情况下,slot='hover'插入下拉列表内容",
+      "type": [
+        "slot"
+      ],
+      "defaultvalue": "''",
+      "name": "slot",
+      "values": "hover,''"
+    }
+  ],
+  "NavLayout": [
+    {
+      "description": "NavItem布局",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "center",
+      "name": "navPosition",
+      "values": "center,start,end"
+    }
+  ],
+  "ColorPicker": [
+    {
+      "description": "初始化色值,支持hex,rgba,hsla格式色值",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "#1ec131",
+      "name": "color",
+      "values": "hex,rgba,hsla"
+    },
+    {
+      "description": "显示模式,模式1表示按钮模式,2表示面板模式",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": "1",
+      "name": "mode",
+      "values": "1,2"
+    },
+    {
+      "description": "按钮模式下宽度",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "200px",
+      "name": "width",
+      "values": ""
+    },
+    {
+      "description": "色值类别,0:hex,1:rgba,2:hsla",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": "0",
+      "name": "fieldsIndex",
+      "values": "0,1,2"
+    },
+    {
+      "description": "是否隐藏颜色格式切换按钮",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "true",
+      "name": "switchs",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "选择改变事件",
+      "name": "change",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "改变完成事件",
+      "name": "changeEnd",
+      "values": ""
+    }
+  ],
+  "Slider": [
+    {
+      "description": "绑定值,单选以Array[0]为准",
+      "type": [
+        "Array [number, number]"
+      ],
+      "defaultvalue": "[min, max]",
+      "name": "value",
+      "values": "[min, max]"
+    },
+    {
+      "description": "最小值",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": "0",
+      "name": "min",
+      "values": ""
+    },
+    {
+      "description": "最大值",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": "100",
+      "name": "max",
+      "values": ""
+    },
+    {
+      "description": "步长",
+      "type": [
+        "Number"
+      ],
+      "defaultvalue": "1",
+      "name": "step",
+      "values": ""
+    },
+    {
+      "description": "设置为true使用范围输入",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "range",
+      "values": ""
+    },
+    {
+      "description": "如果你想要value[0]的值总是大于value[1]，就将它设置为true",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "order",
+      "values": ""
+    },
+    {
+      "description": "自定义滑块",
+      "type": [
+        "Slots"
+      ],
+      "defaultvalue": "default",
+      "name": "slot",
+      "values": "default,left,right"
+    },
+    {
+      "isEvent": true,
+      "description": "选择改变事件",
+      "name": "change",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "拖动停止事件",
+      "name": "dragEnd",
+      "values": ""
+    }
+  ],
+  "Select": [
+    {
+      "description": "选择框绑定值",
+      "type": [
+        "String",
+        "Number"
+      ],
+      "defaultvalue": "false",
+      "name": "value",
+      "values": ""
+    },
+    {
+      "description": "是否启用多选",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "MulChoice",
+      "values": "false"
+    },
+    {
+      "description": "选择项列表",
+      "type": [
+        "Array"
+      ],
+      "defaultvalue": "[]",
+      "name": "ArrayList",
+      "values": ""
+    },
+    {
+      "description": "禁用",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "Noenable",
+      "values": ""
+    },
+    {
+      "description": "修改样式",
+      "type": [
+        "String"
+      ],
+      "defaultvalue": "",
+      "name": "Modify",
+      "values": ""
+    },
+    {
+      "isEvent": true,
+      "description": "选择改变事件",
+      "name": "changeSelect",
+      "values": ""
+    }
+  ],
+  "District": []
+}

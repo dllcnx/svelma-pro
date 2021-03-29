@@ -1,0 +1,71 @@
+{
+  "name": "svelma-pro",
+  "svelte": "src/index.js",
+  "description": "Based on svelma project extension and modification",
+  "version": "2.0.0",
+  "author": "KeiferJu",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://172.17.12.206:8081/repository/npm-hosted/"
+  },
+  "keywords": [
+    "svelte",
+    "svelte.js",
+    "svelma",
+    "bulma",
+    "component",
+    "components"
+  ],
+  "module": "dist/module.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "peerDependencies": {
+    "bulma": "^0.8.0"
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.1",
+    "tippy.js": "^6.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "bulma": "^0.8.0",
+    "conventional-changelog-cli": "^2.0.21",
+    "get-port-cli": "^2.0.0",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.17",
+    "prettier": "^1.17.1",
+    "prettier-plugin-svelte": "^0.5.1",
+    "rollup": "^1.2.2",
+    "rollup-plugin-alias": "^1.5.1",
+    "rollup-plugin-analyzer": "^3.0.1",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-copy": "^2.0.1",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-scss": "^1.0.1",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.3.1",
+    "standard-version": "^6.0.1",
+    "svelte": "^3.9.2",
+    "svelte-preprocess": "^2.12.0",
+    "wait-for-localhost-cli": "^1.1.0"
+  },
+  "scripts": {
+    "scss": "cd src && node-sass svelma-pro.scss svelma-pro.css",
+    "build": "npm run scss && rollup -c",
+    "autobuild": "rollup -c -w",
+    "autodocs": "(cd docs; npx sapper dev --basepath svelma-pro)",
+    "dev": "run-p autobuild autodocs",
+    "docs": "(cd docs; npx sapper export --basepath svelma-pro)",
+    "deploy": "npm run docs && node ./deploy/upload.js",
+    "pkg": "npm run build && npm publish"
+  },
+  "browserslist": "last 2 versions"
+}
