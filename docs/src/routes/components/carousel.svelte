@@ -19,10 +19,10 @@
   export let jsdoc
 
   let options = [
-    'http://dev.smartmapx.com/assets/source-img/banner/banner.jpg',
-    'http://dev.smartmapx.com/assets/source-img/banner/banner2.jpg',
-    'http://dev.smartmapx.com/assets/source-img/banner/banner3.jpg',
-    'http://dev.smartmapx.com/assets/source-img/banner/banner4.jpg'
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e'
   ];
 </script>
 <style>
@@ -39,10 +39,10 @@
   import { Carousel } from 'svelma-pro'
 
   let options = [
-  'http://dev.smartmapx.com/assets/source-img/banner/banner.jpg',
-  'http://dev.smartmapx.com/assets/source-img/banner/banner2.jpg',
-  'http://dev.smartmapx.com/assets/source-img/banner/banner3.jpg',
-  'http://dev.smartmapx.com/assets/source-img/banner/banner4.jpg'
+  'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e',
+    'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1-q.mafengwo.net%2Fs7%2FM00%2F25%2FE2%2FwKgB6lPh4UeARKPpAABh4pruLDc72.jpeg%3FimageMogr2%252Fthumbnail%252F%21310x207r%252Fgravity%252FCenter%252Fcrop%252F%21310x207%252Fquality%252F90&refer=http%3A%2F%2Fp1-q.mafengwo.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619590857&t=b671b501bd1087f3b91aa7d548f6ea0e'
   ];
   </script>
 
