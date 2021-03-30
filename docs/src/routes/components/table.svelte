@@ -26,9 +26,9 @@
   })
   let thead = ['ID', '名称', '日期', '负责人', '描述'];
   let tbody = [
-    {id: 1, name: 'Sm@rtMapX', date: '2017/10/01 - 2019/11/30', admin: '王勤', desc: '敏捷GIS开发平台'},
-    {id: 2, name: 'Sm@rtEarthX', date: '2020/03/19 - 2020/10/15', admin: '宋伟', desc: '三维地图'},
-    {id: 3, name: 'Sm@rtNaviX', date: '2019/07/15 - 2020/01/15', admin: '宋伟', desc: '区域导航'},
+    {id: 1, name: 'xxx', date: '2017/10/01 - 2019/11/30', admin: 'xxx', desc: 'xxx'},
+    {id: 2, name: 'xxx', date: '2020/03/19 - 2020/10/15', admin: 'xxx', desc: 'xxx'},
+    {id: 3, name: 'xxx', date: '2019/07/15 - 2020/01/15', admin: 'xxx', desc: 'xxx'},
   ];
 
   let thead5 = ['address', 'wkb_geometry', 'ogc_fid', 'name'];
@@ -88,9 +88,9 @@
   import { Table } from 'svelma-pro'
   let thead = ['ID', '名称', '日期', '负责人', '描述']
   let tbody = [
-    {id: 1, name: 'Sm@rtMapX', date: '2017/10/01 - 2019/11/30', admin: '王勤', desc: '敏捷GIS开发平台'},
-    {id: 2, name: 'Sm@rtEarthX', date: '2020/03/19 - 2020/10/15', admin: '宋伟', desc: '三维地图'},
-    {id: 3, name: 'Sm@rtNaviX', date: '2019/07/15 - 2020/01/15', admin: '宋伟', desc: '区域导航'},
+    {id: 1, name: 'xxx', date: '2017/10/01 - 2019/11/30', admin: 'xxx', desc: 'xxx'},
+    {id: 2, name: 'xxx', date: '2020/03/19 - 2020/10/15', admin: 'xxx', desc: 'xxx'},
+    {id: 3, name: 'xxx', date: '2019/07/15 - 2020/01/15', admin: 'xxx', desc: 'xxx'},
   ]
 </script>
 <Table 
@@ -119,9 +119,9 @@
   import { Table, Datepicker } from 'svelma-pro'
   let thead = ['ID', '名称', '日期', '负责人', '描述']
   let tbody = [
-    {id: 1, name: 'Sm@rtMapX', date: '2017/10/01 - 2019/11/30', admin: '王勤', desc: '敏捷GIS开发平台'},
-    {id: 2, name: 'Sm@rtEarthX', date: '2020/03/19 - 2020/10/15', admin: '宋伟', desc: '三维地图'},
-    {id: 3, name: 'Sm@rtNaviX', date: '2019/07/15 - 2020/01/15', admin: '宋伟', desc: '区域导航'},
+    {id: 1, name: 'xxx', date: '2017/10/01 - 2019/11/30', admin: 'xxx', desc: 'xxx'},
+    {id: 2, name: 'xxx', date: '2020/03/19 - 2020/10/15', admin: 'xxx', desc: 'xxx'},
+    {id: 3, name: 'xxx', date: '2019/07/15 - 2020/01/15', admin: 'xxx', desc: 'xxx'},
   ]
 </script>
 <!-- 自定义表格的表格基础样式都属于自定义范畴 -->
@@ -183,9 +183,9 @@
   import { Table } from 'svelma-pro'
   let thead = ['ID', '名称', '日期', '负责人', '描述']
   let tbody = [
-    {id: 1, name: 'Sm@rtMapX', date: '2017/10/01 - 2019/11/30', admin: '王勤', desc: '敏捷GIS开发平台'},
-    {id: 2, name: 'Sm@rtEarthX', date: '2020/03/19 - 2020/10/15', admin: '宋伟', desc: '三维地图'},
-    {id: 3, name: 'Sm@rtNaviX', date: '2019/07/15 - 2020/01/15', admin: '宋伟', desc: '区域导航'},
+    {id: 1, name: 'xxx', date: '2017/10/01 - 2019/11/30', admin: 'xxx', desc: 'xxx'},
+    {id: 2, name: 'xxx', date: '2020/03/19 - 2020/10/15', admin: 'xxx', desc: 'xxx'},
+    {id: 3, name: 'xxx', date: '2019/07/15 - 2020/01/15', admin: 'xxx', desc: 'xxx'},
   ]
   function getChecked(res) {
     console.log(res.detail)
