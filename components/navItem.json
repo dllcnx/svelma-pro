@@ -1,0 +1,1 @@
+[{"description":"是否开启下拉列表","type":["Boolean"],"defaultvalue":"false","name":"isHover","values":""},{"description":"开启下拉列表情况下,slot='hover'插入下拉列表内容","type":["slot"],"defaultvalue":"''","name":"slot","values":"hover,''"}]
