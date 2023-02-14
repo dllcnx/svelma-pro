@@ -36,9 +36,14 @@ export default {
       }),
       // scss(),
       svelte({
-        dev,
-        hydratable: true,
-        emitCss: true,
+        compilerOptions:{
+          // enable run-time checks when not in production
+          dev,
+          // generate: production ? 'dom' : 'ssr',
+          hydratable: true,
+          emitCss: true,
+             },
+     
         preprocess: autoPreprocess({
           postcss: {
             plugins: [require('autoprefixer')()],

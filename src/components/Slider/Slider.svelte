@@ -14,6 +14,7 @@
     export let active = false;
     export let order = false;
     export let tip = false;
+    export let tipRender;
 
     $: if (active) setValue(pos);
     $: if (!active) setPos(value);
@@ -119,7 +120,7 @@
     <div
             class="progress-sli"
             style={progress}/>
-    <Thumb bind:pos={pos[0]} on:active={({ detail: v }) => active = v} on:dragEnd value={value[0]} {tip}>
+    <Thumb bind:pos={pos[0]} on:active={({ detail: v }) => active = v} on:dragEnd value={value[0]} {tip} {tipRender}>
         <slot name="left">
             <slot>
                 <div class="thumb"/>
@@ -127,7 +128,7 @@
         </slot>
     </Thumb>
     {#if range}
-        <Thumb bind:pos={pos[1]} on:active={({ detail: v }) => active = v} on:dragEnd value={value[1]} {tip}>
+        <Thumb bind:pos={pos[1]} on:active={({ detail: v }) => active = v} on:dragEnd value={value[1]} {tip} {tipRender}>
             <slot name="right">
                 <slot>
                     <div class="thumb"/>

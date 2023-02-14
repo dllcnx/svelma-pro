@@ -3,6 +3,7 @@
   import { omit } from '../utils'
   import Icon from './Icon.svelte'
 
+  export let customClass = '';
   /** Binding value
    * @svelte-prop {String|Number} [value]
    * */
@@ -154,7 +155,7 @@
       {...props}
       type={newType}
       {value}
-      class="input {statusType}
+      class="input {statusType}  {customClass}
       {size}
       {$$props.class || ''}"
       bind:this={input}
@@ -168,7 +169,7 @@
     <textarea
       {...props}
       {value}
-      class="textarea {statusType}
+      class="textarea {statusType}  {customClass}
       {size}"
       bind:this={input}
       on:input={onInput}

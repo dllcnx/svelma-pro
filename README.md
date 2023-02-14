@@ -29,73 +29,13 @@
 
     $ npm install --save bulma svelma-pro
 
-#### scss
+### 3. scss支持
 
-     $ npm install --save-dev svelte-preprocess autoprefixer node-sass sass
+     因为组件库使用了sass样式扩展，所以需要项目可以编译sass语法。如果没有集成，可以参考此文档。
 
 
-### 3. config
-在你的rollup或者webpack配置文件中添加scss支持:
-
-```js
-// rollup配置  rollup.config.js
-import sveltePreprocess from 'svelte-preprocess';
-
-// ...
-
-const preprocess = sveltePreprocess({
-  scss: {
-    includePaths: ['src'],
-  },
-  postcss: {
-    plugins: [require('autoprefixer')],
-  },
-});
-
-export default {
-  // ... 
-  plugins: [
-    svelte({
-      // ...
-      preprocess: preprocess,
-    })
-  ]
-}
-```
-
-```js
-// webpack配置  webpack.config.js
-import sveltePreprocess from 'svelte-preprocess';
-
-// ...
-const preprocess = sveltePreprocess({
-  scss: {
-    includePaths: ['src'],
-  },
-  postcss: {
-    plugins: [require('autoprefixer')],
-  },
-});
-
-module.export = {
-  // ... 
-  module: {
-    rules: [
-      {
-        test: /.(svelte|html)$/,
-        use: {
-          loader: 'svelte-loader',
-          options: {
-            preprocess, 
-            // ...
-          }
-        }
-      },
-    ]
-  },
-  ]
-}
-```
+    
+ [svelte-sass-template](https://github.com/KeiferJu/svelte-sass-template)
 
 ### 4. 引入Bulma的CSS样式和svelma-pro组件
 
@@ -116,14 +56,4 @@ module.export = {
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></link>
 ```
 
-...或者通过npm包:
-
-    $ npm install --save @fortawesome/fontawesome-free
-
-```html
- <!-- main.js or client.js(sapper) -->
-<script>
-  import 'bulma/css/bulma.css'
-  import '@fortawesome/fontawesome-free/css/all.css'
-</script>
-```
+...或者下载`fontawesome-free`包,引入到静态资产目录，通过html引入.

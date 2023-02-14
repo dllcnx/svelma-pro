@@ -2641,6 +2641,24 @@
       "values": "default,left,right"
     },
     {
+      "description": "显示气泡",
+      "type": [
+        "Boolean"
+      ],
+      "defaultvalue": "false",
+      "name": "tip",
+      "values": "default,true,false"
+    },
+    {
+      "description": "气泡显示值进行处理，例如:(e)=> e+1",
+      "type": [
+        "Function"
+      ],
+      "defaultvalue": "value",
+      "name": "tipRender",
+      "values": "value"
+    },
+    {
       "isEvent": true,
       "description": "选择改变事件",
       "name": "change",

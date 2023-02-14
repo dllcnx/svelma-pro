@@ -29,10 +29,13 @@ export default {
   ],
   plugins: [
     svelte({
-      // enable run-time checks when not in production
-      dev: !production,
-      // generate: production ? 'dom' : 'ssr',
-      hydratable: true,
+      compilerOptions:{
+   // enable run-time checks when not in production
+   dev: !production,
+   // generate: production ? 'dom' : 'ssr',
+   hydratable: true,
+      },
+   
 
       preprocess: autoPreprocess({
         postcss: {

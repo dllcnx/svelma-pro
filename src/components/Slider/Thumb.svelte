@@ -7,6 +7,7 @@
     export let pos;
     export let value;
     export let tip;
+    export let tipRender = (e)=> e;
 
     function dragstart() {
         active = true;
@@ -55,6 +56,7 @@
         width: fit-content;
         height: fit-content;
         transform: translate(-50%, -50%);
+        cursor: pointer;
     }
 
     .thumb-content::before {
@@ -81,7 +83,7 @@
      on:dragend={dragend}
      on:drag={({ detail: v }) => (pos = v)}>
     {#if tip}
-        <div class="sli-tip">{value}</div>
+        <div class="sli-tip">{tipRender(value)}</div>
     {/if}
     <div class="thumb-content" class:active>
         <slot/>
