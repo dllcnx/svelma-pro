@@ -37,7 +37,7 @@
     "autoprefixer": "^9.6.0",
     "bulma": "^0.8.0",
     "conventional-changelog-cli": "^2.0.21",
-    "get-port-cli": "^2.0.0",
+    "get-port-cli": "^3.0.0",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
@@ -59,7 +59,7 @@
     "standard-version": "^6.0.1",
     "svelte": "^3.9.2",
     "svelte-preprocess": "^2.12.0",
-    "wait-for-localhost-cli": "^1.1.0"
+    "wait-for-localhost-cli": "^3.0.0"
   },
   "scripts": {
     "scss": "cd src && node-sass svelma-pro.scss svelma-pro.css",
