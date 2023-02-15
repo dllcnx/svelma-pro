@@ -10,7 +10,7 @@
 
 # 文档
 
-[文档及Demo](https://keiferju.github.io/svelma-pro/)
+[文档及Demo](https://dllcnx.github.io/svelma-pro/)
 
 # 快速开始
 
